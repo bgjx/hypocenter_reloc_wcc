@@ -1,0 +1,31 @@
+NLLOC "./loc/SEML.20230921.180356.grid0" "LOCATED" "Location completed."
+PUBLIC_ID None
+SIGNATURE "Arham Zakki Edelo - edelo.17034@mhs.its.ac.id   obs:./obs/2023_09.obs   NLLoc:v7.00.10(30Aug2020)   run:22Jan2024 21h55m38"
+COMMENT "SEML"
+GRID  2001 2001 1001  727 9811 -2  0.01 0.01 0.01 PROB_DENSITY
+SEARCH OCTREE nInitial 4851 nEvaluated 20011 smallestNodeSide 0.029762/0.029762/0.028409 oct_tree_integral 1.761815e-01 scatter_volume 1.761815e-01
+HYPOCENTER  x 741.42 y 9819.05 z -1.24716  OT 55.4021  ix -1 iy -1 iz -1 MAXIMUM_LIKELIHOOD
+GEOGRAPHIC  OT 2023 09 21  18 03 55.402140  Lat 9819.050595 Long 741.419643 Depth -1.247159
+QUALITY  Pmax 1.58361e+26 MFmin 31.4347 MFmax 40.2816 RMS 0.0278322 Nphs 10 Gap 317.757 Dist 3.11035 Mamp -9.90 0 Mdur -9.90 0
+VPVSRATIO  VpVsRatio 1.72097  Npair 5  Diff 0.683212
+STATISTICS  ExpectX 741.000096 Y 9818.760525 Z -0.761314  CovXX 0.876534 XY 0.383232 XZ -0.362398 YY 0.242822 YZ -0.303974 ZZ 0.788337 EllAz1  340.429 Dip1  12.3685 Len1  0.355638 Az2  265.706 Dip2  -50.2313 Len2  1.28619 Len3  2.225621e+00
+STAT_GEOG  ExpectLat 9818.760525 Long 741.000096 Depth -0.761314
+TRANSFORM  NONE
+QML_OriginQuality  assocPhCt 10  usedPhCt 10  assocStaCt -1  usedStaCt 5  depthPhCt -1  stdErr 0.0278322  azGap 317.757  secAzGap 317.757  gtLevel -  minDist 3.11035 maxDist 6.29342 medDist 4.03198
+QML_OriginUncertainty  horUnc -1  minHorUnc 0.378905  maxHorUnc 1.55915  azMaxHorUnc 64.792
+QML_ConfidenceEllipsoid  semiMajorAxisLength 2.22562  semiMinorAxisLength 0.355638  semiIntermediateAxisLength 1.28619  majorAxisPlunge -37.068  majorAxisAzimuth 60.8934  majorAxisRotation 134.448
+FOCALMECH  Hyp  9819.050595 741.419643 -1.247159 Mech  0 0 0 mf  0 nObs -1
+PHASE ID Ins Cmp On Pha  FM Date     HrMn   Sec     Err  ErrMag    Coda      Amp       Per       PriorWt  >   TTpred    Res       Weight    StaLoc(X  Y         Z)        SDist    SAzim  RAz  RDip RQual    Tcorr       TTerr
+ML06         ?    BHZ  i P      c 20230921 1803   56.2606 GAU  2.78e-03 -1.00e+00 -1.00e+00 -1.00e+00    1.0000 >    0.8556    0.0029    1.5788  738.3100 9819.1170   -1.3960    3.1104 271.22 271.2  92.9  9     0.0000    0.0171
+ML06         ?    BHE  i S      ? 20230921 1803   56.8891 GAU  6.47e-04 -1.00e+00 -1.00e+00 -1.00e+00    1.0000 >    1.4760    0.0109    1.4451  738.3100 9819.1170   -1.3960    3.1104 271.22 271.2  92.9  9     0.0000    0.0295
+ML11         ?    BHZ  e P      c 20230921 1803   56.2034 GAU  9.32e-04 -1.00e+00 -1.00e+00 -1.00e+00    1.0000 >    0.9027   -0.1014    0.1520  738.4670 9820.4900   -1.3120    3.2848 295.99 296.0  91.3  9     0.0000    0.0181
+ML11         ?    BHE  e S      ? 20230921 1803   56.7525 GAU  5.39e-04 -1.00e+00 -1.00e+00 -1.00e+00    1.0000 >    1.5572   -0.2068    0.0096  738.4670 9820.4900   -1.3120    3.2848 295.99 296.0  91.3  9     0.0000    0.0311
+ML09         ?    BHZ  i P      c 20230921 1803   56.4871 GAU  7.76e-04 -1.00e+00  6.70e+01 -1.00e+00    1.0000 >    1.1077   -0.0227    1.2868  737.8820 9820.9850   -1.2700    4.0320 298.67 298.7  90.5  9     0.0000    0.0222
+ML09         ?    BHE  e S      ? 20230921 1803   57.3008 GAU  2.90e-04 -1.00e+00  3.47e+02 -1.00e+00    1.0000 >    1.9110   -0.0123    1.3264  737.8820 9820.9850   -1.2700    4.0320 298.67 298.7  90.5  9     0.0000    0.0382
+ML07         ?    BHZ  e P      c 20230921 1803   56.9433 GAU  2.08e-04 -1.00e+00 -1.00e+00 -1.00e+00    1.0000 >    1.5025    0.0386    1.0455  737.4430 9822.8030   -1.1120    5.4676 313.34 313.3  85.5  9     0.0000    0.0301
+ML07         ?    BHN  e S      ? 20230921 1803   58.0612 GAU  2.60e-04 -1.00e+00 -1.00e+00 -1.00e+00    1.0000 >    2.5923    0.0668    0.6973  737.4430 9822.8030   -1.1120    5.4676 313.34 313.3  88.4  9     0.0000    0.0518
+ML12         ?    BHZ  e P      c 20230921 1803   57.1206 GAU  4.51e-04 -1.00e+00 -1.00e+00 -1.00e+00    1.0000 >    1.7235   -0.0051    1.4053  736.8520 9823.3800   -0.9890    6.2934 313.47 313.5  82.7 10     0.0000    0.0345
+ML12         ?    BHE  e S      ? 20230921 1803   58.3530 GAU  5.04e-04 -1.00e+00  5.00e+00 -1.00e+00    1.0000 >    2.9800   -0.0292    1.0531  736.8520 9823.3800   -0.9890    6.2934 313.47 313.5  84.4 10     0.0000    0.0596
+END_PHASE
+END_NLLOC
+
