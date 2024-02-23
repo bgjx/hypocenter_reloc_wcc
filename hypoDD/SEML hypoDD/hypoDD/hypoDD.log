@@ -1,0 +1,1692 @@
+starting hypoDD (v1.3 - 11/2010)...          Thu Feb  8 14:22:39 2024
+Input parameters: (from hypoDD_comb.inp)
+  cross dtime file: dt.cc
+  catalog dtime file: dt.ct
+  station file: station.dat
+  event file: event.sel
+  initial locations: hypoDD.loc
+  relocated events: hypoDD.reloc
+  event pair file: hypoDD.res
+  station residual file: hypoDD.sta
+  source parameter file: hypoDD.src
+  IDATA=  3  IPHASE=  3  MAXDIST=   15.
+  MINOBS_CC=   2  MINOBS_CT=   6
+  ISTART= 2  ISOLV= 2
+  ITER  1- 5: DAMP= 240.0
+    WT_CCP=  0.0100  WT_CCS=  0.0050  MAXR_CC= -9.0000  MAXD_CC=    3.00
+    WT_CTP=  1.0000  WT_CTS=  0.8000  MAXR_CT= -9.0000  MAXD_CT=    4.00
+  ITER  6-10: DAMP= 240.0
+    WT_CCP=  0.0100  WT_CCS=  0.0050  MAXR_CC= -9.0000  MAXD_CC=    2.00
+    WT_CTP=  1.0000  WT_CTS=  0.8000  MAXR_CT=  2.0000  MAXD_CT=    3.00
+  ITER 11-15: DAMP= 240.0
+    WT_CCP=  1.0000  WT_CCS=  0.5000  MAXR_CC= -9.0000  MAXD_CC=    2.00
+    WT_CTP=  0.0100  WT_CTS=  0.0080  MAXR_CT=  2.0000  MAXD_CT=    2.00
+  ITER 16-20: DAMP= 230.0
+    WT_CCP=  1.0000  WT_CCS=  0.5000  MAXR_CC=  2.0000  MAXD_CC=    1.00
+    WT_CTP=  0.0100  WT_CTS=  0.0080  MAXR_CT=  2.0000  MAXD_CT=    2.00
+  ITER 21-25: DAMP= 230.0
+    WT_CCP=  1.0000  WT_CCS=  0.5000  MAXR_CC=  2.0000  MAXD_CC=    0.60
+    WT_CTP=  0.0100  WT_CTS=  0.0080  MAXR_CT=  2.0000  MAXD_CT=    2.00
+  MOD_NL= 12  MOD_RATIO= 1.73
+    MOD_TOP    MOD_V
+      0.000    3.640
+      1.000    3.670
+      1.500    3.860
+      2.000    3.870
+      2.500    3.910
+      3.000    4.250
+      3.500    4.350
+      4.000    4.400
+      4.500    4.410
+      5.000    4.470
+      7.000    4.500
+     12.000    6.120
+ Relocate cluster number            1
+ Relocate all events
+
+~ Reading data ...   Thu Feb  8 14:22:39 2024 
+# stations total =     15
+# stations < maxdist =     15
+# cross corr P dtimes =   93910 (no org. time corr. for      0 event pairs)
+# cross corr S dtimes =   56655 (no org. time corr. for      0 event pairs)
+# catalog P dtimes =  195946
+# catalog S dtimes =  195497
+# dtimes total =   542008
+# events after dtime match =        551
+# stations =     15
+
+~ clustering ...  
+# clustered events =  551
+# isolated events =    0
+
+# clusters =    7  for min. number of links set to     8
+Cluster    1:   535 events
+     3274       3278       3277       3275       2724       3281       2726       3279
+     3276       3288       2735       2736       3282       2738       2739       2740
+     3286       3285       2729       3280       2719       2746       2747       2748
+     2749       2750       2721       3283       2753       2754       2755       2756
+     2757       2758       2759       2727       2722       2762       2743       2764
+     3284       2744       2720       2768       2769       2770       2771       2772
+     2773       2774       2775       2776       2777       2778       2751       2725
+     2752       2783       2784       2785       2786       2787       2788       2789
+     2790       2791       2792       2793       2794       2795       2796       2797
+     2798       2741       2742       2801       2802       2803       2804       2763
+     2806       2807       2808       3287       2810       2766       2723       2745
+     2814       2815       2816       2817       2818       2819       2820       2821
+     2822       2823       2824       2825       2826       2827       2828       2829
+     2830       2831       2832       2833       2834       2835       2836       2779
+     2737       2839       2782       2841       2842       2843       2844       2845
+     2846       2847       2848       2849       2850       2851       2852       2853
+     2854       2855       2856       2857       2858       2859       2860       2861
+     2862       2863       2864       2865       2866       2867       2868       2869
+     2870       2871       2872       2873       2799       2760       2761       2878
+     2879       2880       2881       2882       2883       2884       2885       2886
+     2805       2889       2890       2893       2894       2895       2896       2897
+     2809       2765       2900       2901       2903       2811       2767       2734
+     2813       2908       2909       2910       2911       2912       2913       2914
+     2915       2916       2917       2918       2919       2920       2921       2922
+     2923       2924       2925       2926       2927       2928       2929       2930
+     2931       2932       2933       2934       2935       2936       2937       2938
+     2939       2940       2941       2942       2943       2944       2945       2946
+     2947       2948       2949       2950       2951       2952       2953       2954
+     2955       2837       2838       2780       2961       2962       2964       2840
+     2967       2968       2969       2971       2972       2973       2974       2975
+     2976       2977       2978       2979       2980       2981       2982       2983
+     2984       2985       2986       2987       2988       2989       2990       2991
+     2992       2993       2994       2995       2996       2997       2998       2999
+     3000       3001       3002       3003       3004       3005       3006       3007
+     3008       3009       3010       3011       3012       3013       3014       3015
+     3016       3017       3018       3019       3020       3021       3022       3023
+     3024       3025       3026       3027       3028       3029       3030       3031
+     3032       3033       3034       2874       2875       3037       2800       2877
+     3042       3043       3044       3045       3046       3047       3048       3049
+     3050       3051       3052       3053       3054       3055       3056       3057
+     3058       3059       3060       3061       3062       3063       3064       3065
+     3066       3067       3068       3069       3070       3071       3072       3073
+     3074       3075       3076       3077       3078       3079       3080       3081
+     3082       3083       3084       3085       3086       3087       3088       2905
+     2906       2812       2907       3094       3095       3096       3097       3098
+     3099       3100       3101       3102       3103       3104       3105       3106
+     3107       3108       3109       3110       3111       3112       3113       3114
+     3115       3116       3117       3118       3119       3120       3121       3122
+     3123       3124       3125       3126       3127       3128       3129       3130
+     3131       3132       3133       3134       3135       3136       3137       3138
+     3139       3140       3141       3142       3143       3144       3145       3146
+     3147       3148       3149       3150       3151       3152       3153       3154
+     3155       3156       3157       3158       3159       3160       3161       3162
+     3163       3164       3165       3166       3167       3168       3169       3170
+     3171       3172       3173       3174       3175       3176       3177       3178
+     3179       3180       3181       3182       3183       3184       3185       3186
+     3187       3188       3189       3190       3191       3192       3193       3194
+     3195       3196       3197       3198       3199       3200       3201       3202
+     3203       3204       3205       3206       3207       3208       3209       3210
+     3211       3212       3213       3214       3215       3216       3217       3218
+     3219       3220       3221       3222       3223       3224       3225       3226
+     3227       3228       3229       3230       3231       3232       3233       3234
+     3235       3236       3237       3238       3239       3240       3241       3242
+     3243       3244       3245       3246       3247       3248       3249       3250
+     3251       3252       3253       3254       3255       3256       3257       3258
+     3259       3260       3261       3262       3263       3264       3265       3266
+     3267       3268       3269       3270       3271       3272       3273
+Cluster    2:     4 events
+     2899       2898       3038       3036
+Cluster    3:     3 events
+     2960       2959       2958
+Cluster    4:     3 events
+     2966       2904       2888
+Cluster    5:     2 events
+     3093       3090
+Cluster    6:     2 events
+     3092       3089
+Cluster    7:     2 events
+     3041       3035
+
+
+RELOCATION OF CLUSTER: 1     Thu Feb  8 14:22:42 2024
+----------------------
+
+~ Reading data ...   Thu Feb  8 14:22:42 2024 
+# stations total =     15
+# stations < maxdist =     15
+# cross corr P dtimes =   93869 (no org. time corr. for      0 event pairs)
+# cross corr S dtimes =   56646 (no org. time corr. for      0 event pairs)
+# catalog P dtimes =  195844
+# catalog S dtimes =  195396
+# dtimes total =   541755
+# events after dtime match =        535
+# stations =     15
+Cluster centroid at:  -1.640658   101.140396   2.622943
+# events:  535
+# initial trial sources:   535
+
+===ITERATION   1 (  1) Thu Feb  8 14:22:43 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   535 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:43 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.0%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.0%)
+no data skipped.
+
+Residual summary of initial data:
+ absolute mean [s] = -0.0032
+ weighted mean [s] =  0.0046
+ absolute variance [s] =    13.5328
+ weighted variance [s] =  6.2204
+ absolute cc rms [s] =  0.1343
+ weighted cc rms [s] (RMSCC) =  0.1196
+ absolute ct rms [s] =  0.1084
+ weighted ct rms [s] (RMSCT) =  0.1029
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:43 2024‡
+  istop = 2; acond (CND)=    62.4; anorm =  6842.6; arnorm =   275.6; xnorm =    64.1
+
+Residual summary:
+ absolute mean [s] = -0.0075 (   -Inf %)
+ weighted mean [s] =  0.0001 (******* %)
+ absolute variance [s] =     8.8556 (    NaN %)
+ weighted variance [s] =     3.1895 (    Inf %)
+ absolute cc rms [s] =  0.1280 (  -4.69 %)
+ weighted cc rms [s] =  0.1145 (  -4.28 %)
+ absolute ct rms [s] =  0.0774 ( -28.58 %)
+ weighted ct rms [s] =  0.0736 ( -28.45 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  267.6  184.5  227.0   72.8 (    0.0    0.0    0.0    0.0)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+  277.8  149.0  386.2   11.4 (    0.0    0.0    0.0    0.0)
+>>>Warning: negative depth -         2993
+ Number of air quakes (AQ) =           1
+Iteration  1 finished Thu Feb  8 14:22:44 2024
+
+===ITERATION   1 (  2) Thu Feb  8 14:22:44 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   535 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:44 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.0%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.0%)
+skipping data...
+# obs =    541746 (100.0%)
+# obs cc =    150514 (100.0%)
+# obs ct =    391232 (100.0%)
+# events =       534
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:45 2024 
+  istop = 2; acond (CND)=    62.4; anorm =  6827.0; arnorm =   270.8; xnorm =    64.1
+
+Residual summary:
+ absolute mean [s] = -0.0075 (   -Inf %)
+ weighted mean [s] =  0.0001 (******* %)
+ absolute variance [s] =     8.8556 (    NaN %)
+ weighted variance [s] =     3.1895 (    Inf %)
+ absolute cc rms [s] =  0.1280 (  -0.00 %)
+ weighted cc rms [s] =  0.1145 (  -0.00 %)
+ absolute ct rms [s] =  0.0774 (   0.00 %)
+ weighted ct rms [s] =  0.0736 (   0.00 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  267.6  183.7  220.9   72.6 (   -0.0   -0.8   -6.1   -0.3)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+  278.1  147.8  386.5   11.4 (    0.3   -1.2    0.3   -0.1)
+  cluster centroid at:  -1.641280   101.141075   2.899122
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+   81.7  -66.5  271.4   -1.8
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   140. ms (RMSST)
+  station with largest ct rms: ML03   =   151. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.001
+Iteration  2 finished Thu Feb  8 14:22:46 2024
+
+===ITERATION   2 (  3) Thu Feb  8 14:22:46 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   534 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:46 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.4%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.2%)
+skipping data...
+# obs =    540564 (586.2%)
+# events =       529
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:46 2024 
+  istop = 2; acond (CND)=    62.6; anorm =  6942.1; arnorm =   256.6; xnorm =    30.0
+
+Residual summary:
+ absolute mean [s] = -0.0077 (   -Inf %)
+ weighted mean [s] = -0.0001 (******* %)
+ absolute variance [s] =     8.4889 (    NaN %)
+ weighted variance [s] =     2.5304 (    Inf %)
+ absolute cc rms [s] =  0.1278 (  -0.21 %)
+ weighted cc rms [s] =  0.1107 (  -3.31 %)
+ absolute ct rms [s] =  0.0743 (  -3.98 %)
+ weighted ct rms [s] =  0.0687 (  -6.64 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  222.0  151.7  153.4   62.3 (  -45.6  -32.0  -67.5  -10.2)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+  120.0   63.6   89.2    7.7 ( -158.1  -84.2 -297.3   -3.7)
+  cluster centroid at:  -1.641455   101.141167   2.688432
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+   95.6  -83.5   36.2   -0.3
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   139. ms (RMSST)
+  station with largest ct rms: ML03   =   151. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.002
+Iteration  3 finished Thu Feb  8 14:22:47 2024
+
+===ITERATION   3 (  4) Thu Feb  8 14:22:47 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   529 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:47 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.3%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.0%)
+skipping data...
+# obs =    539977 (585.6%)
+# events =       529
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:48 2024 
+  istop = 2; acond (CND)=    60.1; anorm =  6756.6; arnorm =   231.4; xnorm =    17.6
+
+Residual summary:
+ absolute mean [s] = -0.0076 (   -Inf %)
+ weighted mean [s] = -0.0000 (******* %)
+ absolute variance [s] =     8.3046 (    NaN %)
+ weighted variance [s] =     2.3767 (    Inf %)
+ absolute cc rms [s] =  0.1273 (  -0.34 %)
+ weighted cc rms [s] =  0.1109 (   0.16 %)
+ absolute ct rms [s] =  0.0729 (  -1.89 %)
+ weighted ct rms [s] =  0.0670 (  -2.47 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  203.6  140.3  157.0   58.7 (  -18.4  -11.5    3.6   -3.6)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   61.0   34.9   75.8    5.5 (  -59.0  -28.7  -13.4   -2.2)
+>>>Warning: negative depth -         2971
+>>>Warning: negative depth -         3205
+ Number of air quakes (AQ) =           2
+Iteration  4 finished Thu Feb  8 14:22:49 2024
+
+===ITERATION   3 (  5) Thu Feb  8 14:22:49 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   529 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:49 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.0%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.0%)
+skipping data...
+# obs =    539886 (585.5%)
+# events =       527
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:49 2024 
+  istop = 2; acond (CND)=    60.3; anorm =  6706.1; arnorm =   227.5; xnorm =    17.6
+
+Residual summary:
+ absolute mean [s] = -0.0076 (   -Inf %)
+ weighted mean [s] = -0.0000 (******* %)
+ absolute variance [s] =     8.3033 (    NaN %)
+ weighted variance [s] =     2.3769 (    Inf %)
+ absolute cc rms [s] =  0.1273 (  -0.01 %)
+ weighted cc rms [s] =  0.1109 (  -0.01 %)
+ absolute ct rms [s] =  0.0729 (  -0.00 %)
+ weighted ct rms [s] =  0.0670 (  -0.00 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  204.4  139.9  147.7   58.4 (    0.8   -0.3   -9.4   -0.3)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   61.1   35.0   54.2    5.5 (    0.1    0.1  -21.7   -0.0)
+  cluster centroid at:  -1.641613   101.141235   2.686083
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  112.8  -92.9   26.8   -0.9
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   138. ms (RMSST)
+  station with largest ct rms: ML03   =   151. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.003
+Iteration  5 finished Thu Feb  8 14:22:50 2024
+
+===ITERATION   4 (  6) Thu Feb  8 14:22:50 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   527 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:50 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.2%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.1%)
+skipping data...
+# obs =    539149 (584.7%)
+# events =       527
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:50 2024 
+  istop = 2; acond (CND)=    59.1; anorm =  6620.8; arnorm =   222.1; xnorm =    11.9
+
+Residual summary:
+ absolute mean [s] = -0.0075 (   -Inf %)
+ weighted mean [s] =  0.0000 (******* %)
+ absolute variance [s] =     8.1604 (    NaN %)
+ weighted variance [s] =     2.3062 (    Inf %)
+ absolute cc rms [s] =  0.1269 (  -0.34 %)
+ weighted cc rms [s] =  0.1112 (   0.24 %)
+ absolute ct rms [s] =  0.0719 (  -1.44 %)
+ weighted ct rms [s] =  0.0663 (  -1.16 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  195.7  134.5  150.7   57.2 (   -8.7   -5.4    3.0   -1.2)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   36.8   21.8   50.5    4.3 (  -24.3  -13.2   -3.7   -1.3)
+>>>Warning: negative depth -         2900
+>>>Warning: negative depth -         3287
+ Number of air quakes (AQ) =           2
+Iteration  6 finished Thu Feb  8 14:22:51 2024
+
+===ITERATION   4 (  7) Thu Feb  8 14:22:51 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   527 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:51 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.0%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.2%)
+skipping data...
+# obs =    538171 (583.6%)
+# events =       525
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:51 2024 
+  istop = 2; acond (CND)=    57.5; anorm =  6489.3; arnorm =   187.8; xnorm =    11.9
+
+Residual summary:
+ absolute mean [s] = -0.0075 (   -Inf %)
+ weighted mean [s] =  0.0000 (******* %)
+ absolute variance [s] =     8.1016 (    NaN %)
+ weighted variance [s] =     2.3085 (    Inf %)
+ absolute cc rms [s] =  0.1269 (  -0.01 %)
+ weighted cc rms [s] =  0.1112 (  -0.00 %)
+ absolute ct rms [s] =  0.0712 (  -0.84 %)
+ weighted ct rms [s] =  0.0662 (  -0.14 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  196.9  134.2  143.3   56.5 (    1.2   -0.3   -7.4   -0.7)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   36.8   22.2   36.0    4.3 (   -0.0    0.4  -14.5   -0.0)
+  cluster centroid at:  -1.641651   101.141289   2.690570
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  121.7  -96.2   29.7   -1.9
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   138. ms (RMSST)
+  station with largest ct rms: ML03   =   150. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.004
+Iteration  7 finished Thu Feb  8 14:22:52 2024
+
+===ITERATION   5 (  8) Thu Feb  8 14:22:52 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    3.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct= -9.0000  maxd_ct=    4.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   525 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:52 2024`
+ cc res/dist cutoff: -9.000s/  3.00km (  0.2%)
+ ct res/dist cutoff [s]: -9.000s/  4.00km (  0.0%)
+skipping data...
+# obs =    537841 (583.3%)
+# events =       525
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:53 2024 
+  istop = 2; acond (CND)=    54.4; anorm =  6314.1; arnorm =   217.8; xnorm =     8.6
+
+Residual summary:
+ absolute mean [s] = -0.0075 (   -Inf %)
+ weighted mean [s] =  0.0000 (******* %)
+ absolute variance [s] =     8.0564 (    NaN %)
+ weighted variance [s] =     2.2668 (    Inf %)
+ absolute cc rms [s] =  0.1268 (  -0.10 %)
+ weighted cc rms [s] =  0.1114 (   0.22 %)
+ absolute ct rms [s] =  0.0709 (  -0.46 %)
+ weighted ct rms [s] =  0.0657 (  -0.63 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+  193.1  129.1  141.7   55.8 (   -3.9   -5.1   -1.6   -0.7)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   23.9   15.0   26.9    3.4 (  -12.9   -7.2   -9.2   -0.9)
+  cluster centroid at:  -1.641671   101.141289   2.688180
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  123.4  -98.4   27.3   -2.7
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   138. ms (RMSST)
+  station with largest ct rms: ML03   =   150. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.005
+Iteration  8 finished Thu Feb  8 14:22:54 2024
+
+===ITERATION   6 (  9) Thu Feb  8 14:22:54 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct=  2.0000  maxd_ct=    3.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   525 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:54 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  2.8%)
+ ct res/dist cutoff [s]:  0.098s/  3.00km ( 12.9%)
+skipping data...
+# obs =    483471 (524.3%)
+# events =       523
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:54 2024 
+  istop = 2; acond (CND)=    61.4; anorm =  6887.8; arnorm =    54.9; xnorm =     5.9
+
+Residual summary:
+ absolute mean [s] = -0.0080 (   -Inf %)
+ weighted mean [s] = -0.0001 (******* %)
+ absolute variance [s] =     5.5695 (    NaN %)
+ weighted variance [s] =     0.2102 (    Inf %)
+ absolute cc rms [s] =  0.1223 (  -3.50 %)
+ weighted cc rms [s] =  0.1068 (  -4.17 %)
+ absolute ct rms [s] =  0.0402 ( -43.26 %)
+ weighted ct rms [s] =  0.0267 ( -59.39 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   42.6   27.2   27.5   11.3 ( -150.5 -101.9 -114.2  -44.4)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   42.3   21.3   17.6    2.3 (   18.4    6.3   -9.3   -1.1)
+>>>Warning: negative depth -         2920
+ Number of air quakes (AQ) =           1
+Iteration  9 finished Thu Feb  8 14:22:55 2024
+
+===ITERATION   6 ( 10) Thu Feb  8 14:22:55 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct=  2.0000  maxd_ct=    3.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   523 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:55 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.0%)
+ ct res/dist cutoff [s]:  0.083s/  3.00km (  5.3%)
+skipping data...
+# obs =    465507 (504.8%)
+# events =       522
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:55 2024 
+  istop = 2; acond (CND)=    61.0; anorm =  6774.7; arnorm =    39.6; xnorm =     4.9
+
+Residual summary:
+ absolute mean [s] = -0.0082 (   -Inf %)
+ weighted mean [s] = -0.0000 (******* %)
+ absolute variance [s] =     5.5083 (    NaN %)
+ weighted variance [s] =     0.1518 (    Inf %)
+ absolute cc rms [s] =  0.1225 (   0.15 %)
+ weighted cc rms [s] =  0.1069 (   0.11 %)
+ absolute ct rms [s] =  0.0359 ( -10.70 %)
+ weighted ct rms [s] =  0.0237 ( -11.15 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   34.6   21.9   21.3    9.1 (   -8.0   -5.2   -6.2   -2.2)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   38.1   19.0   12.4    2.1 (   -4.2   -2.3   -5.2   -0.2)
+  cluster centroid at:  -1.641722   101.141388   2.700527
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  127.7  -97.3   39.3   -3.2
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   133. ms (RMSST)
+  station with largest ct rms: ML15   =    48. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.006
+Iteration 10 finished Thu Feb  8 14:22:56 2024
+
+===ITERATION   7 ( 11) Thu Feb  8 14:22:56 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct=  2.0000  maxd_ct=    3.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   522 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:56 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.1%)
+ ct res/dist cutoff [s]:  0.072s/  3.00km (  4.6%)
+skipping data...
+# obs =    450621 (488.7%)
+# events =       522
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:57 2024 
+  istop = 2; acond (CND)=    58.5; anorm =  6551.6; arnorm =    37.3; xnorm =     4.0
+
+Residual summary:
+ absolute mean [s] = -0.0085 (   -Inf %)
+ weighted mean [s] = -0.0001 (******* %)
+ absolute variance [s] =     5.4425 (    NaN %)
+ weighted variance [s] =     0.1144 (    Inf %)
+ absolute cc rms [s] =  0.1224 (  -0.11 %)
+ weighted cc rms [s] =  0.1067 (  -0.21 %)
+ absolute ct rms [s] =  0.0318 ( -11.40 %)
+ weighted ct rms [s] =  0.0208 ( -12.34 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   27.6   17.7   17.0    7.3 (   -6.9   -4.2   -4.3   -1.8)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   29.1   16.1    9.7    1.7 (   -9.0   -2.9   -2.7   -0.4)
+  cluster centroid at:  -1.641724   101.141418   2.702452
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  131.2  -97.4   41.3   -3.4
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   133. ms (RMSST)
+  station with largest ct rms: ML15   =    43. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.007
+Iteration 11 finished Thu Feb  8 14:22:58 2024
+
+===ITERATION   8 ( 12) Thu Feb  8 14:22:58 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct=  2.0000  maxd_ct=    3.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   522 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:58 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.1%)
+ ct res/dist cutoff [s]:  0.063s/  3.00km (  4.5%)
+skipping data...
+# obs =    436896 (473.8%)
+# events =       522
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:58 2024 
+  istop = 2; acond (CND)=    54.3; anorm =  6145.5; arnorm =    38.5; xnorm =     3.4
+
+Residual summary:
+ absolute mean [s] = -0.0088 (   -Inf %)
+ weighted mean [s] = -0.0001 (******* %)
+ absolute variance [s] =     5.4355 (    NaN %)
+ weighted variance [s] =     0.0894 (    Inf %)
+ absolute cc rms [s] =  0.1223 (  -0.09 %)
+ weighted cc rms [s] =  0.1066 (  -0.09 %)
+ absolute ct rms [s] =  0.0286 ( -10.24 %)
+ weighted ct rms [s] =  0.0185 ( -10.94 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   22.9   14.8   14.0    6.0 (   -4.7   -2.9   -3.0   -1.3)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   23.9   13.9    8.1    1.4 (   -5.2   -2.2   -1.6   -0.2)
+  cluster centroid at:  -1.641719   101.141441   2.703804
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  134.9  -96.9   42.6   -3.5
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.902
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   133. ms (RMSST)
+  station with largest ct rms: ML15   =    39. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.008
+Iteration 12 finished Thu Feb  8 14:22:59 2024
+
+===ITERATION   9 ( 13) Thu Feb  8 14:22:59 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct=  2.0000  maxd_ct=    3.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   522 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:22:59 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.1%)
+ ct res/dist cutoff [s]:  0.057s/  3.00km (  4.6%)
+skipping data...
+# obs =    423439 (459.2%)
+# events =       522
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:22:59 2024 
+  istop = 2; acond (CND)=    55.7; anorm =  6168.8; arnorm =    23.2; xnorm =     2.9
+
+Residual summary:
+ absolute mean [s] = -0.0092 (   -Inf %)
+ weighted mean [s] = -0.0001 (******* %)
+ absolute variance [s] =     5.4765 (    NaN %)
+ weighted variance [s] =     0.0707 (    Inf %)
+ absolute cc rms [s] =  0.1223 (   0.01 %)
+ weighted cc rms [s] =  0.1065 (  -0.02 %)
+ absolute ct rms [s] =  0.0258 (  -9.77 %)
+ weighted ct rms [s] =  0.0166 ( -10.42 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   19.3   12.5   11.7    5.1 (   -3.6   -2.3   -2.2   -0.9)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   19.6   11.9    7.0    1.3 (   -4.3   -2.0   -1.1   -0.2)
+  cluster centroid at:  -1.641713   101.141464   2.704682
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  137.8  -96.2   43.5   -3.6
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.903
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   133. ms (RMSST)
+  station with largest ct rms: ML15   =    34. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.009
+Iteration 13 finished Thu Feb  8 14:23:00 2024
+
+===ITERATION  10 ( 14) Thu Feb  8 14:23:00 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  0.0100  wt_ccs=  0.0050  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  1.0000  wt_cts=  0.8000  maxr_ct=  2.0000  maxd_ct=    3.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   522 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:00 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.0%)
+ ct res/dist cutoff [s]:  0.051s/  3.00km (  4.9%)
+skipping data...
+# obs =    409790 (444.4%)
+# events =       522
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:00 2024 
+  istop = 2; acond (CND)=    53.7; anorm =  5999.6; arnorm =    20.9; xnorm =     2.5
+
+Residual summary:
+ absolute mean [s] = -0.0095 (   -Inf %)
+ weighted mean [s] = -0.0001 (******* %)
+ absolute variance [s] =     5.5535 (    NaN %)
+ weighted variance [s] =     0.0559 (    Inf %)
+ absolute cc rms [s] =  0.1223 (   0.03 %)
+ weighted cc rms [s] =  0.1066 (   0.01 %)
+ absolute ct rms [s] =  0.0232 (  -9.99 %)
+ weighted ct rms [s] =  0.0149 ( -10.37 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   16.3   10.6    9.8    4.3 (   -3.0   -2.0   -1.9   -0.8)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   15.7   10.2    6.0    1.1 (   -3.9   -1.7   -1.0   -0.1)
+  cluster centroid at:  -1.641704   101.141479   2.705271
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  139.8  -95.3   44.1   -3.6
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.903
+  mean pick quality = 1.000
+  station with largest cc rms: ML11   =   133. ms (RMSST)
+  station with largest ct rms: ML15   =    31. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.010
+Iteration 14 finished Thu Feb  8 14:23:01 2024
+
+===ITERATION  11 ( 15) Thu Feb  8 14:23:01 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   522 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:01 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.0%)
+ ct res/dist cutoff [s]:  0.046s/  2.00km (  8.7%)
+skipping data...
+# obs =    386716 (419.4%)
+# events =       522
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:01 2024 
+  istop = 2; acond (CND)=    59.8; anorm =  6400.6; arnorm =    63.6; xnorm =    27.1
+
+Residual summary:
+ absolute mean [s] =  0.0176 (    Inf %)
+ weighted mean [s] = -0.0008 (******* %)
+ absolute variance [s] =     8.4212 (    NaN %)
+ weighted variance [s] =     0.2744 (    Inf %)
+ absolute cc rms [s] =  0.0524 ( -57.13 %)
+ weighted cc rms [s] =  0.0439 ( -58.76 %)
+ absolute ct rms [s] =  0.1106 ( 376.46 %)
+ weighted ct rms [s] =  0.1033 ( 594.66 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   84.2   54.8   51.7   21.1 (   67.9   44.3   41.8   16.9)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+  240.7  151.8  136.9   27.5 (  225.0  141.6  130.8   26.4)
+  cluster centroid at:  -1.641509   101.141800   2.673519
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  172.2  -73.6   12.3    4.9
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.903
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =    76. ms (RMSST)
+  station with largest ct rms: ML11   =   114. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.011
+Iteration 15 finished Thu Feb  8 14:23:02 2024
+
+===ITERATION  12 ( 16) Thu Feb  8 14:23:02 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   522 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:02 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.3%)
+ ct res/dist cutoff [s]:  0.197s/  2.00km (  8.6%)
+skipping data...
+# obs =    365470 (396.4%)
+# events =       521
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:02 2024 
+  istop = 2; acond (CND)=    57.5; anorm =  6196.7; arnorm =    44.2; xnorm =     9.3
+
+Residual summary:
+ absolute mean [s] =  0.0124 (    Inf %)
+ weighted mean [s] =  0.0003 (******* %)
+ absolute variance [s] =     5.9694 (    NaN %)
+ weighted variance [s] =     0.2701 (    Inf %)
+ absolute cc rms [s] =  0.0489 (  -6.81 %)
+ weighted cc rms [s] =  0.0409 (  -6.92 %)
+ absolute ct rms [s] =  0.0922 ( -16.65 %)
+ weighted ct rms [s] =  0.0659 ( -36.17 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   73.8   47.4   44.3   18.2 (  -10.4   -7.4   -7.4   -2.9)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   95.4   55.7   39.0    7.2 ( -145.3  -96.1  -97.9  -20.3)
+>>>Warning: negative depth -         3159
+ Number of air quakes (AQ) =           1
+Iteration 16 finished Thu Feb  8 14:23:03 2024
+
+===ITERATION  12 ( 17) Thu Feb  8 14:23:03 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   521 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:03 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.0%)
+ ct res/dist cutoff [s]:  0.178s/  2.00km (  2.9%)
+skipping data...
+# obs =    359055 (389.4%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:03 2024 
+  istop = 2; acond (CND)=    55.1; anorm =  5954.4; arnorm =    55.2; xnorm =     9.3
+
+Residual summary:
+ absolute mean [s] =  0.0111 (    Inf %)
+ weighted mean [s] =  0.0003 (******* %)
+ absolute variance [s] =     5.4377 (    NaN %)
+ weighted variance [s] =     0.2753 (    Inf %)
+ absolute cc rms [s] =  0.0489 (   0.06 %)
+ weighted cc rms [s] =  0.0409 (   0.05 %)
+ absolute ct rms [s] =  0.0873 (  -5.23 %)
+ weighted ct rms [s] =  0.0619 (  -6.15 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   74.1   46.8   43.1   18.2 (    0.3   -0.6   -1.2   -0.0)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   94.8   55.1   38.4    7.0 (   -0.6   -0.6   -0.6   -0.2)
+  cluster centroid at:  -1.641494   101.142120   2.679885
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  212.7  -71.4   14.7    6.4
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.903
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =    74. ms (RMSST)
+  station with largest ct rms: ML06   =    91. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.012
+Iteration 17 finished Thu Feb  8 14:23:04 2024
+
+===ITERATION  13 ( 18) Thu Feb  8 14:23:04 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:04 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.2%)
+ ct res/dist cutoff [s]:  0.186s/  2.00km (  1.9%)
+skipping data...
+# obs =    354653 (384.6%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:04 2024 
+  istop = 2; acond (CND)=    52.3; anorm =  5667.3; arnorm =    36.2; xnorm =     6.1
+
+Residual summary:
+ absolute mean [s] =  0.0102 (    Inf %)
+ weighted mean [s] =  0.0005 (******* %)
+ absolute variance [s] =     5.2165 (    NaN %)
+ weighted variance [s] =     0.2673 (    Inf %)
+ absolute cc rms [s] =  0.0473 (  -3.26 %)
+ weighted cc rms [s] =  0.0398 (  -2.66 %)
+ absolute ct rms [s] =  0.0858 (  -1.71 %)
+ weighted ct rms [s] =  0.0603 (  -2.56 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   69.1   44.4   41.0   17.4 (   -5.1   -2.4   -2.1   -0.7)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   55.5   34.3   24.9    4.9 (  -39.3  -20.8  -13.4   -2.2)
+  cluster centroid at:  -1.641492   101.142326   2.682117
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  230.6  -71.0   17.0    6.5
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.903
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =    73. ms (RMSST)
+  station with largest ct rms: ML06   =    89. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.013
+Iteration 18 finished Thu Feb  8 14:23:05 2024
+
+===ITERATION  14 ( 19) Thu Feb  8 14:23:05 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:05 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.1%)
+ ct res/dist cutoff [s]:  0.186s/  2.00km (  1.1%)
+skipping data...
+# obs =    352092 (381.8%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:05 2024 
+  istop = 2; acond (CND)=    53.2; anorm =  5777.8; arnorm =    26.4; xnorm =     4.6
+
+Residual summary:
+ absolute mean [s] =  0.0097 (    Inf %)
+ weighted mean [s] =  0.0005 (******* %)
+ absolute variance [s] =     5.0998 (    NaN %)
+ weighted variance [s] =     0.2612 (    Inf %)
+ absolute cc rms [s] =  0.0464 (  -1.98 %)
+ weighted cc rms [s] =  0.0392 (  -1.56 %)
+ absolute ct rms [s] =  0.0851 (  -0.88 %)
+ weighted ct rms [s] =  0.0597 (  -1.04 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   63.2   43.1   39.6   17.0 (   -5.8   -1.3   -1.4   -0.4)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   39.3   23.9   18.7    4.0 (  -16.2  -10.4   -6.2   -0.9)
+  cluster centroid at:  -1.641482   101.142433   2.684714
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  240.9  -69.8   19.6    6.4
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.903
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =    73. ms (RMSST)
+  station with largest ct rms: ML06   =    89. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.014
+Iteration 19 finished Thu Feb  8 14:23:06 2024
+
+===ITERATION  15 ( 20) Thu Feb  8 14:23:06 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc= -9.0000  maxd_cc=    2.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 240.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:06 2024`
+ cc res/dist cutoff: -9.000s/  2.00km (  0.1%)
+ ct res/dist cutoff [s]:  0.185s/  2.00km (  0.7%)
+skipping data...
+# obs =    350431 (380.0%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:06 2024 
+  istop = 2; acond (CND)=    49.6; anorm =  5559.7; arnorm =    41.0; xnorm =     3.6
+
+Residual summary:
+ absolute mean [s] =  0.0095 (    Inf %)
+ weighted mean [s] =  0.0005 (******* %)
+ absolute variance [s] =     5.0306 (    NaN %)
+ weighted variance [s] =     0.2577 (    Inf %)
+ absolute cc rms [s] =  0.0458 (  -1.23 %)
+ weighted cc rms [s] =  0.0389 (  -0.93 %)
+ absolute ct rms [s] =  0.0847 (  -0.52 %)
+ weighted ct rms [s] =  0.0593 (  -0.57 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   62.1   42.5   38.9   16.8 (   -1.2   -0.6   -0.7   -0.2)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   29.1   17.8   15.2    3.3 (  -10.3   -6.1   -3.5   -0.6)
+  cluster centroid at:  -1.641466   101.142502   2.686996
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  247.3  -68.2   21.9    6.3
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.903
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =    72. ms (RMSST)
+  station with largest ct rms: ML06   =    88. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.015
+Iteration 20 finished Thu Feb  8 14:23:07 2024
+
+===ITERATION  16 ( 21) Thu Feb  8 14:23:07 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    1.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:07 2024`
+ cc res/dist cutoff:  0.063s/  1.00km ( 18.0%)
+ ct res/dist cutoff [s]:  0.185s/  2.00km (  0.5%)
+skipping data...
+# obs =    323534 (350.9%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:07 2024 
+  istop = 2; acond (CND)=    59.8; anorm =  6314.7; arnorm =    15.5; xnorm =     2.1
+
+Residual summary:
+ absolute mean [s] =  0.0100 (    Inf %)
+ weighted mean [s] =  0.0004 (******* %)
+ absolute variance [s] =     4.7135 (    NaN %)
+ weighted variance [s] =     0.0247 (    Inf %)
+ absolute cc rms [s] =  0.0262 ( -42.80 %)
+ weighted cc rms [s] =  0.0171 ( -56.12 %)
+ absolute ct rms [s] =  0.0844 (  -0.31 %)
+ weighted ct rms [s] =  0.0594 (   0.06 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   15.6   10.3    9.2    3.9 (  -46.5  -32.1  -29.7  -12.9)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   34.6   18.4   12.3    2.4 (    5.6    0.6   -2.8   -0.9)
+  cluster centroid at:  -1.641439   101.142487   2.689171
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  243.9  -65.1   24.0    6.4
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.907
+  mean pick quality = 1.000
+  station with largest cc rms: ML10   =    34. ms (RMSST)
+  station with largest ct rms: ML06   =    88. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.016
+Iteration 21 finished Thu Feb  8 14:23:07 2024
+
+===ITERATION  17 ( 22) Thu Feb  8 14:23:07 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    1.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:08 2024`
+ cc res/dist cutoff:  0.047s/  1.00km ( 10.5%)
+ ct res/dist cutoff [s]:  0.184s/  2.00km (  0.5%)
+skipping data...
+# obs =    310133 (336.3%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:08 2024 
+  istop = 2; acond (CND)=    57.4; anorm =  6046.1; arnorm =    11.0; xnorm =     1.5
+
+Residual summary:
+ absolute mean [s] =  0.0100 (    Inf %)
+ weighted mean [s] =  0.0004 (******* %)
+ absolute variance [s] =     4.7376 (    NaN %)
+ weighted variance [s] =     0.0133 (    Inf %)
+ absolute cc rms [s] =  0.0205 ( -21.66 %)
+ weighted cc rms [s] =  0.0131 ( -22.99 %)
+ absolute ct rms [s] =  0.0840 (  -0.43 %)
+ weighted ct rms [s] =  0.0591 (  -0.47 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+   10.1    6.6    5.8    2.5 (   -5.5   -3.7   -3.4   -1.5)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   24.6   13.9    9.0    1.5 (  -10.1   -4.6   -3.4   -0.9)
+  cluster centroid at:  -1.641418   101.142456   2.691273
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  240.5  -62.8   26.1    6.3
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.909
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =    26. ms (RMSST)
+  station with largest ct rms: ML06   =    87. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.017
+Iteration 22 finished Thu Feb  8 14:23:08 2024
+
+===ITERATION  18 ( 23) Thu Feb  8 14:23:08 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    1.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:08 2024`
+ cc res/dist cutoff:  0.037s/  1.00km (  9.9%)
+ ct res/dist cutoff [s]:  0.184s/  2.00km (  0.5%)
+skipping data...
+# obs =    298726 (324.0%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:09 2024 
+  istop = 2; acond (CND)=    57.2; anorm =  5962.9; arnorm =     6.5; xnorm =     1.2
+
+Residual summary:
+ absolute mean [s] =  0.0101 (    Inf %)
+ weighted mean [s] =  0.0004 (******* %)
+ absolute variance [s] =     4.8029 (    NaN %)
+ weighted variance [s] =     0.0080 (    Inf %)
+ absolute cc rms [s] =  0.0166 ( -19.29 %)
+ weighted cc rms [s] =  0.0105 ( -20.05 %)
+ absolute ct rms [s] =  0.0837 (  -0.35 %)
+ weighted ct rms [s] =  0.0589 (  -0.28 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    7.1    4.6    4.0    1.7 (   -3.0   -2.0   -1.8   -0.8)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   20.0   10.6    7.0    1.0 (   -4.6   -3.3   -2.0   -0.5)
+  cluster centroid at:  -1.641401   101.142433   2.692482
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  237.3  -61.0   27.3    6.2
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.911
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =    22. ms (RMSST)
+  station with largest ct rms: ML06   =    87. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.018
+Iteration 23 finished Thu Feb  8 14:23:09 2024
+
+===ITERATION  19 ( 24) Thu Feb  8 14:23:09 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    1.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:09 2024`
+ cc res/dist cutoff:  0.030s/  1.00km ( 10.3%)
+ ct res/dist cutoff [s]:  0.183s/  2.00km (  0.4%)
+skipping data...
+# obs =    288161 (312.5%)
+# events =       520
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:09 2024 
+  istop = 2; acond (CND)=    56.9; anorm =  5900.5; arnorm =     4.3; xnorm =     0.9
+
+Residual summary:
+ absolute mean [s] =  0.0103 (    Inf %)
+ weighted mean [s] =  0.0005 (******* %)
+ absolute variance [s] =     4.8896 (    NaN %)
+ weighted variance [s] =     0.0049 (    Inf %)
+ absolute cc rms [s] =  0.0133 ( -19.72 %)
+ weighted cc rms [s] =  0.0084 ( -20.02 %)
+ absolute ct rms [s] =  0.0835 (  -0.31 %)
+ weighted ct rms [s] =  0.0588 (  -0.23 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    5.0    3.3    2.9    1.2 (   -2.1   -1.4   -1.2   -0.5)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   15.5    8.4    5.2    0.7 (   -4.5   -2.2   -1.8   -0.3)
+>>>Warning: negative depth -         3185
+ Number of air quakes (AQ) =           1
+Iteration 24 finished Thu Feb  8 14:23:10 2024
+
+===ITERATION  19 ( 25) Thu Feb  8 14:23:10 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    1.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   520 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:10 2024`
+ cc res/dist cutoff:  0.026s/  1.00km (  6.5%)
+ ct res/dist cutoff [s]:  0.183s/  2.00km (  0.1%)
+skipping data...
+# obs =    282511 (306.4%)
+# events =       519
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:10 2024 
+  istop = 2; acond (CND)=    54.9; anorm =  5739.3; arnorm =     5.9; xnorm =     0.8
+
+Residual summary:
+ absolute mean [s] =  0.0105 (    Inf %)
+ weighted mean [s] =  0.0005 (******* %)
+ absolute variance [s] =     4.9534 (    NaN %)
+ weighted variance [s] =     0.0036 (    Inf %)
+ absolute cc rms [s] =  0.0117 ( -12.16 %)
+ weighted cc rms [s] =  0.0074 ( -11.39 %)
+ absolute ct rms [s] =  0.0833 (  -0.15 %)
+ weighted ct rms [s] =  0.0586 (  -0.27 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    4.0    2.6    2.2    0.9 (   -1.0   -0.6   -0.7   -0.2)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   14.2    7.7    4.4    0.7 (   -1.2   -0.7   -0.8   -0.0)
+  cluster centroid at:  -1.641382   101.142456   2.698239
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  234.6  -58.2   28.9    6.2
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.912
+  mean pick quality = 1.000
+  station with largest cc rms: ML04   =    15. ms (RMSST)
+  station with largest ct rms: ML06   =    87. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.019
+Iteration 25 finished Thu Feb  8 14:23:11 2024
+
+===ITERATION  20 ( 26) Thu Feb  8 14:23:11 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    1.00
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   519 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:11 2024`
+ cc res/dist cutoff:  0.021s/  1.00km (  9.0%)
+ ct res/dist cutoff [s]:  0.183s/  2.00km (  0.2%)
+skipping data...
+# obs =    274868 (298.1%)
+# events =       519
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:11 2024 
+  istop = 2; acond (CND)=    54.5; anorm =  5642.1; arnorm =     3.4; xnorm =     0.6
+
+Residual summary:
+ absolute mean [s] =  0.0107 (    Inf %)
+ weighted mean [s] =  0.0005 (******* %)
+ absolute variance [s] =     5.0547 (    NaN %)
+ weighted variance [s] =     0.0024 (    Inf %)
+ absolute cc rms [s] =  0.0097 ( -17.24 %)
+ weighted cc rms [s] =  0.0061 ( -17.88 %)
+ absolute ct rms [s] =  0.0833 (  -0.09 %)
+ weighted ct rms [s] =  0.0587 (   0.08 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    3.0    1.9    1.6    0.7 (   -1.1   -0.7   -0.6   -0.3)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   11.0    6.0    3.3    0.5 (   -3.3   -1.7   -1.1   -0.2)
+  cluster centroid at:  -1.641371   101.142456   2.698628
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  233.1  -56.9   29.3    6.1
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.913
+  mean pick quality = 1.000
+  station with largest cc rms: ML04   =    12. ms (RMSST)
+  station with largest ct rms: ML06   =    86. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.020
+Iteration 26 finished Thu Feb  8 14:23:11 2024
+
+===ITERATION  21 ( 27) Thu Feb  8 14:23:11 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    0.60
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   519 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:12 2024`
+ cc res/dist cutoff:  0.017s/  0.60km ( 26.4%)
+ ct res/dist cutoff [s]:  0.183s/  2.00km (  0.2%)
+skipping data...
+# obs =    255320 (276.9%)
+# events =       519
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:12 2024 
+  istop = 2; acond (CND)=    51.8; anorm =  5426.0; arnorm =     2.6; xnorm =     0.4
+
+Residual summary:
+ absolute mean [s] =  0.0113 (    Inf %)
+ weighted mean [s] =  0.0006 (******* %)
+ absolute variance [s] =     5.3701 (    NaN %)
+ weighted variance [s] =     0.0011 (    Inf %)
+ absolute cc rms [s] =  0.0078 ( -19.33 %)
+ weighted cc rms [s] =  0.0053 ( -13.34 %)
+ absolute ct rms [s] =  0.0829 (  -0.40 %)
+ weighted ct rms [s] =  0.0586 (  -0.17 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    2.3    1.5    1.3    0.6 (   -0.7   -0.4   -0.3   -0.1)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+   11.6    7.6    3.7    1.0 (    0.6    1.6    0.5    0.5)
+  cluster centroid at:  -1.641375   101.142441   2.698903
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  232.9  -57.4   29.5    6.1
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.917
+  mean pick quality = 1.000
+  station with largest cc rms: ML04   =    10. ms (RMSST)
+  station with largest ct rms: ML06   =    86. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.021
+Iteration 27 finished Thu Feb  8 14:23:12 2024
+
+===ITERATION  22 ( 28) Thu Feb  8 14:23:12 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    0.60
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   519 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:12 2024`
+ cc res/dist cutoff:  0.014s/  0.60km ( 11.6%)
+ ct res/dist cutoff [s]:  0.183s/  2.00km (  0.2%)
+skipping data...
+# obs =    248738 (269.8%)
+# events =       519
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:12 2024 
+  istop = 2; acond (CND)=    49.5; anorm =  5173.3; arnorm =     2.0; xnorm =     0.3
+
+Residual summary:
+ absolute mean [s] =  0.0115 (    Inf %)
+ weighted mean [s] =  0.0007 (******* %)
+ absolute variance [s] =     5.4568 (    NaN %)
+ weighted variance [s] =     0.0007 (    Inf %)
+ absolute cc rms [s] =  0.0062 ( -21.10 %)
+ weighted cc rms [s] =  0.0042 ( -21.41 %)
+ absolute ct rms [s] =  0.0826 (  -0.35 %)
+ weighted ct rms [s] =  0.0584 (  -0.39 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    1.6    1.0    0.9    0.4 (   -0.7   -0.5   -0.4   -0.2)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+    9.6    5.6    2.5    0.7 (   -2.0   -2.0   -1.2   -0.3)
+  cluster centroid at:  -1.641375   101.142433   2.699220
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  233.2  -57.6   29.9    6.0
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.918
+  mean pick quality = 1.000
+  station with largest cc rms: ML15   =     8. ms (RMSST)
+  station with largest ct rms: ML06   =    85. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.022
+Iteration 28 finished Thu Feb  8 14:23:13 2024
+
+===ITERATION  23 ( 29) Thu Feb  8 14:23:13 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    0.60
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   519 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:13 2024`
+ cc res/dist cutoff:  0.011s/  0.60km ( 12.0%)
+ ct res/dist cutoff [s]:  0.182s/  2.00km (  0.2%)
+skipping data...
+# obs =    242768 (263.3%)
+# events =       519
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:13 2024 
+  istop = 2; acond (CND)=    49.5; anorm =  5153.4; arnorm =     1.4; xnorm =     0.2
+
+Residual summary:
+ absolute mean [s] =  0.0116 (    Inf %)
+ weighted mean [s] =  0.0007 (******* %)
+ absolute variance [s] =     5.5445 (    NaN %)
+ weighted variance [s] =     0.0004 (    Inf %)
+ absolute cc rms [s] =  0.0048 ( -22.34 %)
+ weighted cc rms [s] =  0.0033 ( -21.84 %)
+ absolute ct rms [s] =  0.0824 (  -0.30 %)
+ weighted ct rms [s] =  0.0582 (  -0.33 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    1.1    0.7    0.6    0.3 (   -0.4   -0.3   -0.3   -0.1)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+    8.6    4.3    2.2    0.6 (   -1.0   -1.2   -0.3   -0.2)
+  cluster centroid at:  -1.641376   101.142448   2.699612
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  233.1  -57.5   30.2    6.0
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.918
+  mean pick quality = 1.000
+  station with largest cc rms: ML03   =     6. ms (RMSST)
+  station with largest ct rms: ML06   =    85. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.023
+Iteration 29 finished Thu Feb  8 14:23:13 2024
+
+===ITERATION  24 ( 30) Thu Feb  8 14:23:13 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    0.60
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   519 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:13 2024`
+ cc res/dist cutoff:  0.008s/  0.60km ( 12.0%)
+ ct res/dist cutoff [s]:  0.181s/  2.00km (  0.1%)
+skipping data...
+# obs =    237515 (257.6%)
+# events =       519
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:14 2024 
+  istop = 2; acond (CND)=    47.4; anorm =  4992.6; arnorm =     1.2; xnorm =     0.1
+
+Residual summary:
+ absolute mean [s] =  0.0118 (    Inf %)
+ weighted mean [s] =  0.0007 (******* %)
+ absolute variance [s] =     5.6312 (    NaN %)
+ weighted variance [s] =     0.0003 (    Inf %)
+ absolute cc rms [s] =  0.0037 ( -22.54 %)
+ weighted cc rms [s] =  0.0026 ( -21.48 %)
+ absolute ct rms [s] =  0.0822 (  -0.24 %)
+ weighted ct rms [s] =  0.0580 (  -0.27 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    0.9    0.6    0.5    0.2 (   -0.3   -0.2   -0.1   -0.1)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+    6.8    3.4    1.8    0.4 (   -1.8   -0.9   -0.3   -0.1)
+  cluster centroid at:  -1.641376   101.142448   2.700014
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  234.6  -57.5   30.7    5.9
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.919
+  mean pick quality = 1.000
+  station with largest cc rms: ML03   =     5. ms (RMSST)
+  station with largest ct rms: ML06   =    85. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.024
+Iteration 30 finished Thu Feb  8 14:23:14 2024
+
+===ITERATION  25 ( 31) Thu Feb  8 14:23:14 2024
+
+Weighting parameters for this iteration:
+  wt_ccp=  1.0000  wt_ccs=  0.5000  maxr_cc=  2.0000  maxd_cc=    0.60
+  wt_ctp=  0.0100  wt_cts=  0.0080  maxr_ct=  2.0000  maxd_ct=    2.00
+  damp= 230.0
+
+~ getting partials for    15 stations and   519 source(s) ...
+~ getting residual vector...
+re-weighting ... Thu Feb  8 14:23:14 2024`
+ cc res/dist cutoff:  0.007s/  0.60km ( 10.7%)
+ ct res/dist cutoff [s]:  0.181s/  2.00km (  0.1%)
+skipping data...
+# obs =    233376 (253.1%)
+# events =       519
+# stations =        15
+
+~ setting up G matrix.. 
+~ scaling G columns ... 
+~ lsqr ...    Thu Feb  8 14:23:14 2024 
+  istop = 2; acond (CND)=    47.3; anorm =  4963.5; arnorm =     0.8; xnorm =     0.1
+
+Residual summary:
+ absolute mean [s] =  0.0119 (    Inf %)
+ weighted mean [s] =  0.0008 (******* %)
+ absolute variance [s] =     5.6961 (    NaN %)
+ weighted variance [s] =     0.0002 (    Inf %)
+ absolute cc rms [s] =  0.0029 ( -20.58 %)
+ weighted cc rms [s] =  0.0021 ( -19.00 %)
+ absolute ct rms [s] =  0.0820 (  -0.23 %)
+ weighted ct rms [s] =  0.0579 (  -0.23 %)
+
+Location summary:
+ mean 2sig-error (x,y,z,t) [m,ms]: 
+    0.7    0.5    0.4    0.2 (   -0.1   -0.1   -0.1   -0.0)
+ mean shift (x,y,z,t) [m,ms] (DX,DY,DZ,DT): 
+    4.8    2.8    1.4    0.4 (   -2.0   -0.6   -0.4   -0.1)
+  cluster centroid at:  -1.641379   101.142464   2.700213
+  mean centroid (origin) shift in x,y,z,t [m,ms]: 
+  235.4  -57.8   30.9    5.8
+  (OS in std output gives maximum value.)
+
+More:
+  mean phase coherency = 0.919
+  mean pick quality = 1.000
+  station with largest cc rms: ML04   =     4. ms (RMSST)
+  station with largest ct rms: ML06   =    85. ms (RMSST)
+
+Relocation results for this iteration are stored in hypoDD.reloc.001.025
+Iteration 31 finished Thu Feb  8 14:23:16 2024

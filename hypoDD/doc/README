@@ -1,0 +1,7 @@
+This directory contains tutorial documentation for hypoDD and
+related commands.  The documentation consists of a manual, and
+for convenience is supplied in two formats:
+
+hypoDD.pdf - Adobe Portable Document Format.  Readable with Adobe Acrobat.
+hypoDD.ps - Adobe PostScript.  Readable with various display programs
+	(ghostview, ghostscript, pageview, etc.) and laser printers.
