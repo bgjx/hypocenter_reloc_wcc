@@ -60,7 +60,7 @@ def weighting_generator (pick_data, id_start, id_end, weight_statement ):
 
 if __name__== "__main__":
     # initialize input and output path
-    hypo_input  = Path(r"F:\SEML\CATALOG HYPOCENTER\catalog\hypo_init.xlsx") # relocated catalog
+    hypo_input  = Path(r"F:\SEML\CATALOG HYPOCENTER\catalog\2023_all.xlsx") # relocated catalog
     pick_input  = Path(r"F:\SEML\DATA PICKING MEQ\DATA PICK 2023\PICK 2023 09\2023_09_full_test.xlsx") # catalog picking
     phase_out   = Path(r"F:\SEML\DD RELOCATION\ph2dt") # output path
     
@@ -77,6 +77,7 @@ if __name__== "__main__":
     # Generate weighting shceme
     dio = weighting_generator(pick_data, ID_start, ID_end, weight_input)
     
+    
     with open (phase_out.joinpath(f"{out_name}.pha"), "w") as file_DD:
         for _id in range (ID_start, ID_end + 1):
         
@@ -88,11 +89,17 @@ if __name__== "__main__":
             year, month, day  = hypo.Year.iloc[0], hypo.Month.iloc[0], hypo.Day.iloc[0]
             hour, minute, sec = hypo.Hour.iloc[0], hypo.Minute.iloc[0], hypo.T0.iloc[0]
             
-            # get hypo attribut
+            # get hypo attributes
             lat, lon, depth = hypo.Lat.iloc[0], hypo.Lon.iloc[0], hypo.Depth.iloc[0]
             
             # corrected depth to fix the airquake normalize effect by the hypoDD program
             depth_cor = (depth * 0.001) + 2.000 # in km unit
+            
+            # get the hypo error data to calculate the horizontal and vertical error
+            xx_err, yy_err, zz_err = hypo["PDF_errXX(m)"].iloc[0], hypo["PDF_errYY(m)"].iloc[0], hypo["PDF_errZZ(m)"].iloc[0]
+            
+            h_error = (0.5*(float(xx_err) + float(yy_err)))*0.001
+            z_error = float(zz_err) * 0.001
             
             # rms error
             rms = hypo.RMS_error.iloc[0]
@@ -101,7 +108,7 @@ if __name__== "__main__":
             OT = UTCDateTime(f"{year}-{int(month):02d}-{int(day):02d}T{int(hour):02d}:{int(minute):02d}:{float(sec):012.9f}")
             
             # start writing the phase file
-            file_DD.write(f"#  {int(year):4d}  {int(month):2d} {int(day):2d} {int(hour):2d} {int(minute):2d}  {float(sec):9.6f} {float(lat):13.9f} {float(lon):14.9f}  {float(depth_cor):8.5f}  0  0  0 {float(rms):11.8f}  {int(_id):4d}\n")
+            file_DD.write(f"#  {int(year):4d}  {int(month):2d} {int(day):2d} {int(hour):2d} {int(minute):2d}  {float(sec):9.6f} {float(lat):13.9f} {float(lon):14.9f}  {float(depth_cor):8.5f}  0  {h_error:6.3f}  {z_error:6.3f} {float(rms):9.6f}  {int(_id):4d}\n")
             
             for sta in list(pick.get("Station")):
                 
@@ -115,8 +122,8 @@ if __name__== "__main__":
                 # start writing the phase file
                 weight_P = dio[f"{sta} P"][1]
                 weight_S = dio[f"{sta} S"][1]
-                file_DD.write(f"{sta} {abs(float(P_pick_time - OT)):11.8f}  {float(weight_P):5.3f}  P\n")
-                file_DD.write(f"{sta} {abs(float(S_pick_time - OT)):11.8f}  {float(weight_S):5.3f}  S\n")
+                file_DD.write(f"{sta}  {abs(float(P_pick_time - OT)):9.6f}  {float(weight_P):5.3f}  P\n")
+                file_DD.write(f"{sta}  {abs(float(S_pick_time - OT)):9.6f}  {float(weight_S):5.3f}  S\n")
 
     file_DD.close()
     print('-----------  The code has run succesfully! --------------')
